@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -37,13 +37,13 @@ header h1 strong {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .content-wrap aside {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 250px;
-          flex: 1 1 250px;
+  -ms-flex: 1 1 250px;
+  flex: 1 1 250px;
   max-width: 250px;
   padding-right: 16px;
 }
@@ -77,4 +77,36 @@ header h1 strong {
   background-color: #313131;
   color: #AAA;
 }
+
+.main-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-head>form {
+  margin-bottom: 50px;
+}
+
+.anime-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.anime-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.anime-card h3 {
+  padding: 10px 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
